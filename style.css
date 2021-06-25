@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: 5rem;
+  box-shadow: 0px 16px 40px rgba(13, 63, 103, 0.1);
+  padding: 0 1rem;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+nav a:active {
+  color: #FF496C;
+  font-weight: bold;
+
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-text {
+  color: #006CFF;
+  font-weight: bold;
+  font-size: 1.125rem;
+  font-family: 'Merriweather', serif;
+}
+
+nav .actions {
+  color: #006CFF;
+}
+
+nav .logo-img {
+  transform: scale(0.6);
+}
+
+nav a:hover {
+  border-radius: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+nav .actions a:hover {
+  background-color: #006CFF;
+  color: white;
+}
+
+nav .avatar {
+  display: flex;
+  align-items: center;
+}
+
+nav .avatar i {
+  padding: 0.125rem 0.5rem;
+  margin-right: 1rem;
+  font-size: 1.375rem;
+  cursor: pointer;
+}
+
+nav .avatar img, #share img.img-profile {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#contact {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  padding: 0 3rem;
+  
+}
+
+#contact div.contact-container {
+  max-width: 465px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px 20px 26px rgba(54, 53, 53, 0.16);
+}
+
+.contact-text img {
+  transform: scale(0.9);
+  margin: 1rem 0;
+}
+
+form {
+  margin: 1.5rem auto;
+}
+
+form input, textarea {
+  background: #FFFFFF;
+  border: 1px solid rgba(14, 14, 14, 0.2);
+  border-radius: 0.25rem;
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+form .message {
+  height: 10rem;
+}
+
+form textarea {
+  height: 100%;
+}
+
+form button {
+  margin: 2rem 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background: #006CFF;
+  color: whitesmoke;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  letter-spacing: 0.5px;
+  background: #2a82fc;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* share list style begins here */
+
+#share {
+  height: calc(100vh - 6rem);
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-share {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100%;
+}
+
+.left-menu {
+  background: #006CFF;
+  width: 15rem;
+  height: 100%;
+  padding: 1rem 0.5rem;
+  color: white;
+}
+
+.left-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  width: calc(100vw - 15rem);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.profile span {
+  margin: 0 0.75rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+}
+
+.menu a {
+  padding: 0.5rem 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu a svg {
+  margin-right: 0.375rem;
+}
+
+.menu a span {
+  font-size: 0.85rem;
+}
+
+.menu a i {
+  font-size: 1.25rem;
+  width: 1.5rem;
+  margin-right: 0.25rem;
+  margin-left: 0.125rem;
+}
+
+.menu a:hover {
+  border-top: 1px solid rgb(124, 164, 197);
+  border-bottom: 1px solid rgb(124, 164, 197);
+}
+
+#share .content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+
+
+.search-container p {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+.phone{
+background: #006CFF;
+display: flex;
+width: auto;
+}
+.mine{
+height: 800px;
+width: 700px;
+}
+.content p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    /* padding-left: 20px;
+    padding-right: 40px; */
+    }
+    .content h2{
+    line-height: 50px;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.content{
+  padding-top: 200px;
+}
+.back{
+  background:white;
+  display: flex;
+  width: auto;
+  padding: 30px 80px;
+  }
+  .contain p{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+    }
+    .contain h2{
+    line-height: 50px;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.contain{
+  padding-top: 250px;
+}
+.last{
+  background-color:rgb(221, 240, 255);
+  height: 200px;
+}
+.last{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.gift{
+  height: 300px;
+  background-color:rgb(221, 240, 255);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.list{
+  text-transform: capitalize;
+  padding-top:200px;
+  
+}
+#mine{
+position:absolute;
+left: 500px;
+/* padding: 50px; */
+top: 3200px;
+}
+#we{
+  position: absolute;
+  left: 140px;
+}
+.all{
+display: flex;
+padding: 10px;
+background-color:  #006CFF;
+}
+.testy{
+  padding-top: 15px;
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  text-transform: capitalize;
+
+}
+.them{
+display:flex;
+padding-left: 500px;
+}
+.them li { 
+text-decoration: none;
+padding-left:20px ;
+list-style-type: none;
+color: white;
+padding-top: 15px;
+}
+.footerlogo{
+border-radius:50px;
+background-color: white;
+padding: 10px;
+align-items:center;
+margin-left: 120px;
+}
+.getone{
+  display: flex;
+  background-color:rgb(221, 240, 255);
+  justify-content: center;
+  padding: 40px;
+}
+.okey{
+  padding:30px 20px;
+  font-weight:bolder ;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.fine{
+  border-radius: 20px;
+  padding: 10px;
+}
